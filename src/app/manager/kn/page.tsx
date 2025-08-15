@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Box, Container, Heading, Text, ChakraProvider, defaultSystem, Spinner } from "@chakra-ui/react";
 import { Table } from "@chakra-ui/react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
-import { Manager, Asset } from "../../types";
+import { Manager, Asset } from "../../../types";
 
 const COLORS = ["#8884d8", "#82ca9d", "#a4a4a4"];
 
