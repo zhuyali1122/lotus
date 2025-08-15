@@ -4,6 +4,8 @@ import { Box, Container, Heading, Button, ChakraProvider, defaultSystem, Spinner
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Table } from "@chakra-ui/react";
 import Link from "next/link";
+import { Manager } from "../types";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 // 简单 Lotus 图标 SVG
 function LotusLogo() {
@@ -20,7 +22,7 @@ function LotusLogo() {
 }
 
 export default function Home() {
-  const [managers, setManagers] = useState<any[]>([]);
+  const [managers, setManagers] = useState<Manager[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -107,7 +109,7 @@ export default function Home() {
                       <Table.Cell>
                         <Link href={`/manager/${m.id}`}>
                           <Button colorScheme="gray" variant="outline" size="sm" p={2} minW={"auto"}>
-                            <ChevronRightIcon boxSize={5} />
+                            <AiOutlineInfoCircle size={32} color="#4A5568" />
                           </Button>
                         </Link>
                       </Table.Cell>
