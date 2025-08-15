@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Box, Container, Heading, Button, ChakraProvider, defaultSystem, Spinner, Flex, Text } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Table } from "@chakra-ui/react";
 import Link from "next/link";
 import { Manager } from "../types";

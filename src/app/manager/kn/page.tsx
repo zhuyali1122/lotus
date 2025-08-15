@@ -3,18 +3,19 @@ import { useEffect, useState } from "react";
 import { Box, Container, Heading, Text, ChakraProvider, defaultSystem, Spinner } from "@chakra-ui/react";
 import { Table } from "@chakra-ui/react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
+import { Manager, Asset } from "../../types";
 
 const COLORS = ["#8884d8", "#82ca9d", "#a4a4a4"];
 
 export default function ManagerDetail() {
-  const [manager, setManager] = useState<any>(null);
+  const [manager, setManager] = useState<Manager | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/managers.json")
       .then((res) => res.json())
-      .then((data) => {
-        const m = data.find((item: any) => item.id === "kn");
+      .then((data: Manager[]) => {
+        const m = data.find((item) => item.id === "kn");
         setManager(m);
         setLoading(false);
       });
@@ -46,7 +47,7 @@ export default function ManagerDetail() {
                 outerRadius={80}
                 label
               >
-                {manager.assets.map((entry: any, idx: number) => (
+                {manager.assets.map((entry: Asset, idx: number) => (
                   <Cell key={`cell-${idx}`} fill={COLORS[idx % COLORS.length]} />
                 ))}
               </Pie>
@@ -63,7 +64,7 @@ export default function ManagerDetail() {
             </Table.Row>
           </Table.Header>
           <Table.Body>
-            {manager.assets.map((asset: any) => (
+            {manager.assets.map((asset: Asset) => (
               <Table.Row key={asset.country} _hover={{ bg: "gray.50" }}>
                 <Table.Cell>{asset.country}</Table.Cell>
                 <Table.Cell>{asset.count}</Table.Cell>
