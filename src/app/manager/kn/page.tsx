@@ -15,7 +15,7 @@ export default function ManagerDetail() {
     fetch("/managers.json")
       .then((res) => res.json())
       .then((data: Manager[]) => {
-        const m = data.find((item) => item.id === "kn");
+        const m = data.find((item) => item.id === "kn") || null;
         setManager(m);
         setLoading(false);
       });
