@@ -1,0 +1,132 @@
+[
+  {
+    "id": "kn",
+    "name": "KN Capital",
+    "aum": "2.5B USD",
+    "historicalYield": "12.3%",
+    "assetCount": 1200,
+    "description": "KN Capital 专注于东南亚个人信贷市场，管理多元化资产组合。",
+    "assets": [
+      { "country": "Indonesia", "count": 600 },
+      { "country": "Vietnam", "count": 400 },
+      { "country": "Thailand", "count": 200 }
+    ]
+  },
+  {
+    "id": "docking",
+    "name": "Docking Partners",
+    "aum": "1.8B USD",
+    "historicalYield": "11.7%",
+    "assetCount": 950,
+    "description": "Docking Partners 致力于为东南亚个人信贷提供创新解决方案。",
+    "assets": [
+      { "country": "Indonesia", "count": 500 },
+      { "country": "Philippines", "count": 300 },
+      { "country": "Malaysia", "count": 150 }
+    ]
+  },
+  {
+    "id": "lotus",
+    "name": "Lotus Finance",
+    "aum": "3.1B USD",
+    "historicalYield": "13.0%",
+    "assetCount": 1500,
+    "description": "Lotus Finance 是东南亚领先的个人信贷资产管理人。",
+    "assets": [
+      { "country": "Vietnam", "count": 800 },
+      { "country": "Thailand", "count": 400 },
+      { "country": "Singapore", "count": 300 }
+    ]
+  },
+  {
+    "id": "zenith",
+    "name": "Zenith Holdings",
+    "aum": "2.2B USD",
+    "historicalYield": "12.1%",
+    "assetCount": 1100,
+    "description": "Zenith Holdings 聚焦东南亚新兴市场的个人信贷。",
+    "assets": [
+      { "country": "Indonesia", "count": 700 },
+      { "country": "Vietnam", "count": 250 },
+      { "country": "Philippines", "count": 150 }
+    ]
+  },
+  {
+    "id": "apex",
+    "name": "Apex Credit",
+    "aum": "1.5B USD",
+    "historicalYield": "10.9%",
+    "assetCount": 800,
+    "description": "Apex Credit 专注于小额信贷和普惠金融。",
+    "assets": [
+      { "country": "Thailand", "count": 400 },
+      { "country": "Indonesia", "count": 250 },
+      { "country": "Vietnam", "count": 150 }
+    ]
+  },
+  {
+    "id": "nova",
+    "name": "Nova Lending",
+    "aum": "2.8B USD",
+    "historicalYield": "13.5%",
+    "assetCount": 1300,
+    "description": "Nova Lending 致力于科技驱动的个人信贷服务。",
+    "assets": [
+      { "country": "Philippines", "count": 600 },
+      { "country": "Vietnam", "count": 400 },
+      { "country": "Indonesia", "count": 300 }
+    ]
+  },
+  {
+    "id": "fusion",
+    "name": "Fusion Capital",
+    "aum": "2.0B USD",
+    "historicalYield": "11.2%",
+    "assetCount": 1000,
+    "description": "Fusion Capital 以创新风控著称。",
+    "assets": [
+      { "country": "Malaysia", "count": 500 },
+      { "country": "Thailand", "count": 300 },
+      { "country": "Vietnam", "count": 200 }
+    ]
+  },
+  {
+    "id": "vertex",
+    "name": "Vertex Finance",
+    "aum": "1.9B USD",
+    "historicalYield": "12.8%",
+    "assetCount": 900,
+    "description": "Vertex Finance 专注于东南亚多国信贷市场。",
+    "assets": [
+      { "country": "Singapore", "count": 400 },
+      { "country": "Indonesia", "count": 300 },
+      { "country": "Vietnam", "count": 200 }
+    ]
+  },
+  {
+    "id": "summit",
+    "name": "Summit Partners",
+    "aum": "2.3B USD",
+    "historicalYield": "11.9%",
+    "assetCount": 1050,
+    "description": "Summit Partners 以稳健著称。",
+    "assets": [
+      { "country": "Vietnam", "count": 500 },
+      { "country": "Thailand", "count": 350 },
+      { "country": "Indonesia", "count": 200 }
+    ]
+  },
+  {
+    "id": "horizon",
+    "name": "Horizon Credit",
+    "aum": "1.7B USD",
+    "historicalYield": "10.7%",
+    "assetCount": 850,
+    "description": "Horizon Credit 聚焦东南亚普惠金融。",
+    "assets": [
+      { "country": "Philippines", "count": 400 },
+      { "country": "Vietnam", "count": 300 },
+      { "country": "Indonesia", "count": 150 }
+    ]
+  }
+] 
