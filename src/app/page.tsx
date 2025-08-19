@@ -42,75 +42,76 @@ export default function Home() {
     <ChakraProvider>
       <Box minH="100vh" bg="var(--background)" color={mainText}>
         {/* Banner Section - 新设计 */}
-        <Flex
-          minH="360px"
-          direction={{ base: "column", md: "row" }}
-          w="full"
-          px={{ base: 4, md: 24 }} // 两侧留白
-        >
-          {/* 左侧 Logo 区域 */}
-          <Box
-            flex="1"
-            bg="#F8E9E6"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            minH={{ base: "180px", md: "360px" }}
-            borderTopLeftRadius="2xl"
-            borderBottomLeftRadius="2xl"
+        <Container maxW="container.xl" px={{ base: 4, md: 8 }} mb={8}>
+          <Flex
+            minH="360px"
+            direction={{ base: "column", md: "row" }}
+            w="full"
+            // px={{ base: 4, md: 24 }} // 移除外部留白，交由Container控制
           >
-            <Image src="/chuan-logo.jpg" alt="CHUAN Logo" width={128} height={128} />
-          </Box>
-
-          {/* 右侧品牌内容 */}
-          <Box
-            flex="2"
-            bg="#3B4A6B"
-            color="white"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            px={{ base: 6, md: 16 }}
-            py={{ base: 8, md: 0 }}
-            minH={{ base: "180px", md: "360px" }}
-            borderTopRightRadius="2xl"
-            borderBottomRightRadius="2xl"
-          >
-            <HStack spacing={4} mb={6} flexWrap="wrap">
-              <Link href="/">
-                <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>HOME</Button>
-              </Link>
-              <Link href="/about-us">
-                <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>ABOUT US</Button>
-              </Link>
-              <Link href="/our-services">
-                <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>OUR SERVICES</Button>
-              </Link>
-              <Link href="/contact-us">
-                <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>CONTACT US</Button>
-              </Link>
-            </HStack>
-            <Heading as="h1" size="2xl" fontWeight="bold" mb={4}>
-              Welcome to CHUAN
-            </Heading>
-            <Text fontSize="lg" mb={6}>
-              Real World Yield, OnChain.<br />
-              Unbound, Unlocked, Unstoppable.<br />
-              加密混合·无边界·另类资产网络
-            </Text>
-            <Button
-              size="lg"
-              bg="#F8E9E6"
-              color="#3B4A6B"
-              fontWeight="bold"
-              _hover={{ bg: "#e6d3cb" }}
-              alignSelf="flex-start"
-              onClick={() => router.push("/invest")}
+            {/* 左侧 Logo 区域 */}
+            <Box
+              flex="1"
+              bg="#fef1ed"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              minH={{ base: "180px", md: "360px" }}
+              borderTopLeftRadius="2xl"
+              borderBottomLeftRadius="2xl"
             >
-              Start Investing
-            </Button>
-          </Box>
-        </Flex>
+              <Image src="/chuan-logo.jpg" alt="CHUAN Logo" width={128} height={128} />
+            </Box>
+            {/* 右侧品牌内容 */}
+            <Box
+              flex="2"
+              bg="#3B4A6B"
+              color="white"
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              px={{ base: 6, md: 16 }}
+              py={{ base: 8, md: 0 }}
+              minH={{ base: "180px", md: "360px" }}
+              borderTopRightRadius="2xl"
+              borderBottomRightRadius="2xl"
+            >
+              <HStack spacing={4} mb={6} flexWrap="wrap">
+                <Link href="/">
+                  <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>HOME</Button>
+                </Link>
+                <Link href="/about-us">
+                  <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>ABOUT US</Button>
+                </Link>
+                <Link href="/our-services">
+                  <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>OUR SERVICES</Button>
+                </Link>
+                <Link href="/contact-us">
+                  <Button variant="ghost" color="white" _hover={{ bg: "#F8E9E6", color: "#3B4A6B" }}>CONTACT US</Button>
+                </Link>
+              </HStack>
+              <Heading as="h1" size="2xl" fontWeight="bold" mb={4}>
+                Welcome to CHUAN
+              </Heading>
+              <Text fontSize="lg" mb={6}>
+                Real World Yield, OnChain.<br />
+                Unbound, Unlocked, Unstoppable.<br />
+                加密混合·无边界·另类资产网络
+              </Text>
+              <Button
+                size="lg"
+                bg="#F8E9E6"
+                color="#3B4A6B"
+                fontWeight="bold"
+                _hover={{ bg: "#e6d3cb" }}
+                alignSelf="flex-start"
+                onClick={() => router.push("/invest")}
+              >
+                Start Investing
+              </Button>
+            </Box>
+          </Flex>
+        </Container>
         <Container maxW="container.xl" pt={16} pb={20} px={{ base: 4, md: 8 }}>
           {/* Key Stats Section */}
           <VStack spacing={12} mb={16}>

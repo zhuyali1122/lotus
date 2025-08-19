@@ -1,5 +1,5 @@
 :root {
-  --background: #F8E9E6; /* 淡粉色 */
+  --background: #fef1ed; /* 新淡粉色 */
   --foreground: #3B4A6B; /* 深蓝色 */
   --accent: #3B4A6B;     /* 强调色/按钮/链接 */
   --secondary-bg: #ffffff;
@@ -9,10 +9,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #232946;
-    --foreground: #F8E9E6;
-    --accent: #F8E9E6;
+    --foreground: #fef1ed;
+    --accent: #fef1ed;
     --secondary-bg: #3B4A6B;
-    --secondary-text: #F8E9E6;
+    --secondary-text: #fef1ed;
   }
 }
 
