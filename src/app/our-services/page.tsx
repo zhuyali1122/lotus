@@ -77,6 +77,17 @@ export default function OurServices() {
             </Box>
           </Flex>
         </Container>
+        {/* Chatbase 智能体嵌入 */}
+        <Box maxW="container.xl" mx="auto" px={{ base: 4, md: 8 }}>
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/pU244Cu_lHyD466q7rFgN"
+            width="100%"
+            height="500"
+            style={{ border: "none" }}
+            title="CUANx Chatbot"
+            allow="microphone;"
+          ></iframe>
+        </Box>
       </Box>
     </ChakraProvider>
   );
