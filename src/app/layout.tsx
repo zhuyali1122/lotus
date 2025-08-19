@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { Box, Flex, HStack, Button } from "@chakra-ui/react";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,12 +21,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${robotoMono.variable}`}>
+      <body>
         {children}
       </body>
     </html>

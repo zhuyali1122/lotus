@@ -1,12 +1,18 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F8E9E6; /* 淡粉色 */
+  --foreground: #3B4A6B; /* 深蓝色 */
+  --accent: #3B4A6B;     /* 强调色/按钮/链接 */
+  --secondary-bg: #ffffff;
+  --secondary-text: #22223B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #232946;
+    --foreground: #F8E9E6;
+    --accent: #F8E9E6;
+    --secondary-bg: #3B4A6B;
+    --secondary-text: #F8E9E6;
   }
 }
 
@@ -31,8 +37,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--secondary-text);
 }
 
 @media (prefers-color-scheme: dark) {
